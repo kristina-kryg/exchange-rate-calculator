@@ -31,3 +31,26 @@ main {
     justify-content: flex-start;
     height: 100%;
 }
+h3 {
+  text-align: center;
+}
+section {
+  width: min(500px, 70vw);
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+  }
+
+ .input-group {
+  line-height: 3;
+  }
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#calculate-button {
+  margin-left: auto;
+  margin-top: 15px;
+}

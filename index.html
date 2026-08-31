@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Rate Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <main>
-        <h2 style="color:brown">Exchange Rate Calculator</h2>
-        <div>
+        <h1 style="color:brown">Exchange Rate Calculator</h1>
+        <section>
+        <h3>Calculate Commission Fee</h3>
+        <div class="input-group">
         <label for="exchange-rate">Exchange Rate:</label>
         <input type="number" step="0.01" id="exchange-rate" placeholder="Enter exchange rate" required>
         </div>
-        <div>
+        <div class="input-group">
         <label for="fee">Commission Fee:</label>
         <input type="number" step="0.01" id="fee" placeholder="Enter commission fee" required>
         </div>
-        <div>
+        <div class="button-row">
         <button id="calculate-button" onclick="calculateFeeFromInputs()">Calculate</button>
         </div>
+        </section>
     </main>
 <script src="index.js"></script>
 </body>
