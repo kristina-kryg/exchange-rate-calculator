@@ -1,11 +1,12 @@
 body {
+  /* TODO: add font */
     background-image: linear-gradient(
     40deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(273deg 100% 20%) 0%,
+    /* hsl(240deg 100% 20%) 0%, */
+    /* hsl(273deg 100% 20%) 0%,
     hsl(290deg 100% 20%) 0%,
     hsl(304deg 100% 21%) 0%,
-    hsl(315deg 87% 26%) 0%,
+    hsl(315deg 87% 26%) 0%, */
     hsl(324deg 66% 33%) 1%,
     hsl(333deg 55% 39%) 2%,
     hsl(341deg 46% 45%) 3%,
@@ -31,18 +32,38 @@ main {
     justify-content: flex-start;
     height: 100%;
 }
+
+h1{
+  text-align: center;
+  color: darkslateblue;
+}
+
+#description {
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size:large;
+  font-style: italic;
+}
+
 h3 {
   text-align: center;
+  padding: 10px;
 }
-section {
+
+.calculator, .result {
   width: min(500px, 70vw);
    padding: 20px;
    background-color: white;
    border-radius: 10px;
+   margin:10px;
   }
 
  .input-group {
   line-height: 3;
+  width: 100%;
+  max-width:300px;
   }
 
 .button-row {
@@ -51,6 +72,21 @@ section {
 }
 
 #calculate-button {
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-top: 15px;
+}
+
+#clear-button {
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+#fee-result {
+  font-size: large;
+  text-align: center;
+}
+
+strong {
+  display:inline-block;
+  margin-top: 10px;
 }

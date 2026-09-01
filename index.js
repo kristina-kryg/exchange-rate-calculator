@@ -3,14 +3,17 @@ function calculateFee(exchangeRate, feePercentage) {
     return fee;
 }
 
-
-// const maxExchangeRate = exchangeRate - fee;
-// document.write("Maximum social exchange rate is " + maxExchangeRate.toFixed(4) + "<br>");
-
 function calculateFeeFromInputs() {
     const exchangeRateValue = document.getElementById("exchange-rate").value;
     const feePercentageValue = document.getElementById("fee").value;
+    
+    const fee = calculateFee(exchangeRateValue, feePercentageValue);
 
-    // const fee = calculateFee(exchangeRate,feePercentage);
-    // document.write("The commission fee amount is " + fee.toFixed(4) + "<br>");
+   const result = document.getElementById("fee-result");
+    result.innerHTML = "The commission fee amount is: <br><strong>" + fee.toFixed(4) + "</strong>";
+}
+function clearInputs() {
+    document.getElementById("fee").value = null;
+    document.getElementById("exchange-rate").value = null;
+    document.getElementById("fee-result").innerHTML = "";
 }

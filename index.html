@@ -11,8 +11,9 @@
 </head>
 <body>
     <main>
-        <h1 style="color:brown">Exchange Rate Calculator</h1>
-        <section>
+        <h1>Exchange Rate Calculator</h1>
+        <p id="description">Use the converter below to get an indication of the commission fee</p>
+        <section class="calculator">
         <h3>Calculate Commission Fee</h3>
         <div class="input-group">
         <label for="exchange-rate">Exchange Rate:</label>
@@ -23,8 +24,13 @@
         <input type="number" step="0.01" id="fee" placeholder="Enter commission fee" required>
         </div>
         <div class="button-row">
+        <button id="clear-button" onclick="clearInputs()">Clear</button>
         <button id="calculate-button" onclick="calculateFeeFromInputs()">Calculate</button>
-        </div>
+    </div>
+        </section>
+<section class="result">
+        <h3>Result</h3>
+        <p id="fee-result"></p>
         </section>
     </main>
 <script src="index.js"></script>
