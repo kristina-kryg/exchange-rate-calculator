@@ -1,35 +1,25 @@
+
+
 body {
-  /* TODO: add font */
-    background-image: linear-gradient(
-    40deg,
-    /* hsl(240deg 100% 20%) 0%, */
-    /* hsl(273deg 100% 20%) 0%,
-    hsl(290deg 100% 20%) 0%,
-    hsl(304deg 100% 21%) 0%,
-    hsl(315deg 87% 26%) 0%, */
-    hsl(324deg 66% 33%) 1%,
-    hsl(333deg 55% 39%) 2%,
-    hsl(341deg 46% 45%) 3%,
-    hsl(349deg 39% 50%) 5%,
-    hsl(357deg 40% 55%) 8%,
-    hsl(4deg 42% 59%) 11%,
-    hsl(11deg 45% 61%) 14%,
-    hsl(16deg 47% 64%) 19%,
-    hsl(21deg 48% 68%) 25%,
-    hsl(25deg 49% 72%) 32%,
-    hsl(29deg 50% 76%) 40%,
-    hsl(34deg 50% 80%) 51%,
-    hsl(39deg 51% 85%) 65%,
-    hsl(45deg 57% 91%) 81%,
-    hsl(53deg 89% 96%) 100%
+  background-image: linear-gradient(
+    45deg,
+    hsl(209deg 97% 47%) -1%,
+    hsl(219deg 84% 65%) -1%,
+    hsl(223deg 84% 74%) 2%,
+    hsl(225deg 83% 81%) 9%,
+    hsl(227deg 82% 87%) 19%,
+    hsl(229deg 78% 93%) 36%,
+    hsl(0deg 0% 99%) 86%
   );
-    height: 100vh;
+  height: 100vh;
 }
+
 main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     height: 100%;
 }
 
@@ -58,6 +48,7 @@ h3 {
    background-color: white;
    border-radius: 10px;
    margin:10px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   }
 
  .input-group {
@@ -68,17 +59,14 @@ h3 {
 
 .button-row {
   display: flex;
-  justify-content: flex-end;
-}
-
-#calculate-button {
-  /* margin-left: auto; */
+  justify-content: space-between;
   margin-top: 15px;
 }
 
-#clear-button {
-  margin-right: auto;
-  margin-top: 15px;
+#calculate-button:hover, #clear-button:hover {
+  color: navy;
+  transform: scale(1.12);
+  transition: all 0.4s ease; 
 }
 
 #fee-result {
