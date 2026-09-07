@@ -9,7 +9,7 @@ body {
     hsl(229deg 78% 93%) 36%,
     hsl(0deg 0% 99%) 86%
   );
-  height: 100%;
+  height: 100vh;
 }
 
 main {
@@ -28,8 +28,9 @@ h1 {
 
 #description {
   text-align: center;
-  max-width: 500px;
-  margin-bottom: 20px;
+  max-width: 700px;
+  margin-bottom: 5px;
+  margin-top: 0;
   padding: 10px;
   font-size: large;
   font-style: italic;
@@ -37,12 +38,13 @@ h1 {
 
 h3 {
   text-align: center;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .calculator,
 .result {
-  width: min(500px, 70vw);
+  width: min(500px);
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -78,8 +80,8 @@ h3 {
   transition: all 0.4s ease;
 }
 
-#fee-result {
-  font-size: large;
+#result-container {
+  font-size: medium;
   text-align: center;
 }
 
