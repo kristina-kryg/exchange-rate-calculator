@@ -44,7 +44,7 @@ h3 {
 
 .calculator,
 .result {
-  width: min(500px);
+  width: min(600px, 70%);
   padding: 20px;
   background-color: white;
   border-radius: 10px;
